@@ -66,7 +66,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                     items: [
                         {
                             key: 'send',
-                            content: 'Send',
+                            content: 'Enviar',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
@@ -78,7 +78,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                         },
                         {
                             key: 'preview',
-                            content: 'Preview in this channel',
+                            content: 'Previsualizar en este canal',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
@@ -98,7 +98,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                         },
                         {
                             key: 'edit',
-                            content: 'Edit',
+                            content: 'Editar',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
@@ -110,7 +110,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                         },
                         {
                             key: 'duplicate',
-                            content: 'Duplicate',
+                            content: 'Duplicar',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
@@ -127,7 +127,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                         },
                         {
                             key: 'delete',
-                            content: 'Delete',
+                            content: 'Eliminar',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
