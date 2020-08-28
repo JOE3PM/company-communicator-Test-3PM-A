@@ -225,8 +225,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <Input
                                     className="inputField"
                                     value={this.state.title}
-                                    label="Title"
-                                    placeholder="Title (required)"
+                                    label="Titulo del mensaje"
+                                    placeholder="Titulo (requerid0)"
                                     onChange={this.onTitleChanged}
                                     autoComplete="off"
                                     required
@@ -235,8 +235,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <Input
                                     className="inputField"
                                     value={this.state.imageLink}
-                                    label="Image URL"
-                                    placeholder="Image URL"
+                                    label="Imagen URL (Sitio debe ser https)"
+                                    placeholder="Imagen URL"
                                     onChange={this.onImageLinkChanged}
                                     errorLabel={this.state.errorImageUrlMessage}
                                     autoComplete="off"
@@ -245,8 +245,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <TextArea
                                     className="inputField textArea"
                                     autoFocus
-                                    placeholder="Summary"
-                                    label="Summary"
+                                    placeholder="Contenido del mensaje"
+                                    label="Contenido del mensaje"
                                     value={this.state.summary}
                                     onChange={this.onSummaryChanged}
                                 />
@@ -254,8 +254,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <Input
                                     className="inputField"
                                     value={this.state.author}
-                                    label="Author"
-                                    placeholder="Author"
+                                    label="Autor del mensaje (Opcional)"
+                                    placeholder="Autor del mensaje"
                                     onChange={this.onAuthorChanged}
                                     autoComplete="off"
                                 />
@@ -263,8 +263,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <Input
                                     className="inputField"
                                     value={this.state.btnTitle}
-                                    label="Button title"
-                                    placeholder="Button title"
+                                    label="Nombre del boton de redirecion"
+                                    placeholder="Boton de redireccion"
                                     onChange={this.onBtnTitleChanged}
                                     autoComplete="off"
                                 />
@@ -272,8 +272,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                 <Input
                                     className="inputField"
                                     value={this.state.btnLink}
-                                    label="Button URL"
-                                    placeholder="Button URL"
+                                    label="URL del detalle del mensaje"
+                                    placeholder="URL del detalle del mensaje"
                                     onChange={this.onBtnLinkChanged}
                                     errorLabel={this.state.errorButtonUrlMessage}
                                     autoComplete="off"
