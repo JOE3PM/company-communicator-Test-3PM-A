@@ -296,13 +296,13 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                     <div className="taskModule">
                         <div className="formContainer">
                             <div className="formContentContainer" >
-                                <h3>Choose how you want to send your message</h3>
+                                <h3>Elige cómo quieres enviar tu mensaje</h3>
                                 <RadiobuttonGroup
                                     className="radioBtns"
                                     value={this.state.selectedRadioBtn}
                                     onSelected={this.onGroupSelected}
                                 >
-                                    <Radiobutton name="grouped" value="teams" label="Send to General channel of specific teams" />
+                                    <Radiobutton name="grouped" value="teams" label="Enviar a canal General de grupo en teams" />
                                     <Dropdown
                                         hidden={!this.state.teamsOptionSelected}
                                         placeholder="Select team(s)"
@@ -313,7 +313,7 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                         onSelectedChange={this.onTeamsChange}
                                         noResultsMessage="We couldn't find any matches."
                                     />
-                                    <Radiobutton name="grouped" value="rosters" label="Send in chat to specific people" />
+                                    <Radiobutton name="grouped" value="rosters" label="Envíe el mensaje a personas específicas" />
                                     <Dropdown
                                         hidden={!this.state.rostersOptionSelected}
                                         placeholder="Choose team(s) members"
@@ -324,10 +324,10 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                         onSelectedChange={this.onRostersChange}
                                         noResultsMessage="We couldn't find any matches."
                                     />
-                                    <Radiobutton name="grouped" value="allUsers" label="Send in chat to everyone" />
+                                    <Radiobutton name="grouped" value="allUsers" label="Envíe el mensaje a toda la organizacion" />
                                     <div className={this.state.selectedRadioBtn === "allUsers" ? "" : "hide"}>
                                         <div className="noteText">
-                                            <Text error content="Note: This option sends the message to everyone in your org who has access to the app." />
+                                            <Text error content="Nota: esta opción envía el mensaje a todas las personas de su organización que tienen acceso a la aplicación." />
                                         </div>
                                     </div>
                                 </RadiobuttonGroup>
