@@ -121,7 +121,7 @@ class DraftMessages extends React.Component<IMessageProps, IMessageState> {
         <Loader />
       );
     } else if (this.state.message.length === 0) {
-      return (<div className="results">You have no draft messages.</div>);
+        return (<div className="results">No tienes borradores de mensajes.</div>);
     }
     else {
       return (
@@ -139,7 +139,7 @@ class DraftMessages extends React.Component<IMessageProps, IMessageState> {
             <Text
               truncated
               weight="bold"
-              content="Title"
+              content="Titulo del mensaje a enviar"
             >
             </Text>
           </Flex.Item>
