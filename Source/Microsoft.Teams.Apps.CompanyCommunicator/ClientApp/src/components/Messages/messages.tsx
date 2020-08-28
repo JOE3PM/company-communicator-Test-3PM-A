@@ -102,7 +102,7 @@ class Messages extends React.Component<IMessageProps, IMessageState> {
         <Loader />
       );
     } else if (this.state.message.length === 0) {
-      return (<div className="results">You have no sent messages.</div>);
+        return (<div className="results">No tienes mensajes enviados.</div>);
     }
     else {
       return (
@@ -120,7 +120,7 @@ class Messages extends React.Component<IMessageProps, IMessageState> {
             <Text
               truncated
               weight="bold"
-              content="Title"
+              content="Titulo del mensaje"
             >
             </Text>
           </Flex.Item>
@@ -130,7 +130,7 @@ class Messages extends React.Component<IMessageProps, IMessageState> {
           <Flex.Item size="size.quarter" variables={{ 'size.quarter': '24%' }} shrink={false}>
             <Text
               truncated
-              content="Recipients"
+              content="Estados envio"
               weight="bold"
             >
             </Text>
@@ -138,7 +138,7 @@ class Messages extends React.Component<IMessageProps, IMessageState> {
           <Flex.Item size="size.quarter" variables={{ 'size.quarter': '24%' }} >
             <Text
               truncated
-              content="Sent"
+              content="Fecha de envio"
               weight="bold"
             >
             </Text>
