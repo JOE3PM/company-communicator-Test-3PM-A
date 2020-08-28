@@ -56,7 +56,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                     items: [
                         {
                             key: 'status',
-                            content: 'View status',
+                            content: 'Ver estado',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
@@ -68,7 +68,7 @@ class Overflow extends React.Component<OverflowProps, OverflowState> {
                         },
                         {
                             key: 'duplicate',
-                            content: 'Duplicate',
+                            content: 'Duplicar',
                             onClick: (event: any) => {
                                 event.stopPropagation();
                                 this.setState({
