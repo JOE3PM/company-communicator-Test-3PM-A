@@ -127,30 +127,30 @@ class StatusTaskModule extends React.Component<RouteComponentProps, IStatusState
                     <div className="formContainer">
                         <div className="formContentContainer" >
                             <div className="contentField">
-                                <h3>Title</h3>
+                                <h3>Titulo del mensaje enviado</h3>
                                 <span>{this.state.message.title}</span>
                             </div>
                             <div className="contentField">
-                                <h3>Sending started</h3>
+                                <h3>Fecha de envio</h3>
                                 <span>{this.state.message.sendingStartedDate}</span>
                             </div>
                             <div className="contentField">
-                                <h3>Completed</h3>
+                                <h3>Fecha completado</h3>
                                 <span>{this.state.message.sentDate}</span>
                             </div>
                             <div className="contentField">
-                                <h3>Duration</h3>
+                                <h3>Tiempo de duracion (seg)</h3>
                                 <span>{this.state.message.sendingDuration}</span>
                             </div>
                             <div className="contentField">
-                                <h3>Results</h3>
-                                <label>Success : </label>
+                                <h3>Resultados</h3>
+                                <label>Satisfactorios : </label>
                                 <span>{this.state.message.succeeded}</span>
                                 <br />
-                                <label>Failure : </label>
+                                <label>Fallidos : </label>
                                 <span>{this.state.message.failed}</span>
                                 <br />
-                                <label>Throttled : </label>
+                                <label>En Espera : </label>
                                 <span>{this.state.message.throttled}</span>
                             </div>
                             <div className="contentField">
@@ -175,7 +175,7 @@ class StatusTaskModule extends React.Component<RouteComponentProps, IStatusState
             let length = this.state.message.teamNames.length;
             return (
                 <div>
-                    <h3>Sent to General channel in teams</h3>
+                    <h3>Mensjae enviado a los grupos en Teams</h3>
                     {this.state.message.teamNames.sort().map((team, index) => {
                         if (length === index + 1) {
                             return (<span key={`teamName${index}`} >{team}</span>);
@@ -188,7 +188,7 @@ class StatusTaskModule extends React.Component<RouteComponentProps, IStatusState
             let length = this.state.message.rosterNames.length;
             return (
                 <div>
-                    <h3>Sent in chat to people in teams</h3>
+                    <h3>Mensaje enviado al grupo especificio en Teams</h3>
                     {this.state.message.rosterNames.sort().map((team, index) => {
                         if (length === index + 1) {
                             return (<span key={`teamName${index}`} >{team}</span>);
@@ -200,7 +200,7 @@ class StatusTaskModule extends React.Component<RouteComponentProps, IStatusState
         } else if (this.state.message.allUsers) {
             return (
                 <div>
-                    <h3>Sent in chat to everyone</h3>
+                    <h3>Mensaje enviado a toda la organizacion</h3>
                 </div>);
         } else {
             return (<div></div>);
