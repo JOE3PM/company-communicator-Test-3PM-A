@@ -226,7 +226,7 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                     className="inputField"
                                     value={this.state.title}
                                     label="Titulo del mensaje"
-                                    placeholder="Titulo (requerid0)"
+                                    placeholder="Titulo (requerido)"
                                     onChange={this.onTitleChanged}
                                     autoComplete="off"
                                     required
