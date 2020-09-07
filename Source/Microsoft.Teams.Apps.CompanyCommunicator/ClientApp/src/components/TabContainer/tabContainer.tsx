@@ -91,7 +91,7 @@ class TabContainer extends React.Component<ITaskInfoProps, ITabContainerState> {
     public onNewMessage = () => {
         let taskInfo: ITaskInfo = {
             url: this.state.url,
-            title: "New message",
+            title: "Nuevo Mensaje",
             height: 530,
             width: 1000,
             fallbackUrl: this.state.url,

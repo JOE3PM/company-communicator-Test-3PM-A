@@ -175,7 +175,7 @@ class StatusTaskModule extends React.Component<RouteComponentProps, IStatusState
             let length = this.state.message.teamNames.length;
             return (
                 <div>
-                    <h3>Mensjae enviado a los grupos en Teams</h3>
+                    <h3>Mensaje enviado a los grupos en Teams</h3>
                     {this.state.message.teamNames.sort().map((team, index) => {
                         if (length === index + 1) {
                             return (<span key={`teamName${index}`} >{team}</span>);
