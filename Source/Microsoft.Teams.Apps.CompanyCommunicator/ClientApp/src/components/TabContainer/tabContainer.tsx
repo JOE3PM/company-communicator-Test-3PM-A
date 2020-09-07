@@ -54,7 +54,7 @@ class TabContainer extends React.Component<ITaskInfoProps, ITabContainerState> {
     public render(): JSX.Element {
         const panels = [
             {
-                title: 'Draft messages',
+                title: 'Mensajes en Borrador',
                 content: {
                     key: 'sent',
                     content: (
@@ -65,7 +65,7 @@ class TabContainer extends React.Component<ITaskInfoProps, ITabContainerState> {
                 },
             },
             {
-                title: 'Sent messages',
+                title: 'Mensajes Enviado',
                 content: {
                     key: 'draft',
                     content: (
