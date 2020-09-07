@@ -147,12 +147,12 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
     }
 
     public setDefaultCard = (card: any) => {
-        setCardTitle(card, "Title");
+        setCardTitle(card, "Titulo");
         let imgUrl = getBaseUrl() + "/image/imagePlaceholder.png";
         setCardImageLink(card, imgUrl);
-        setCardSummary(card, "Summary");
-        setCardAuthor(card, "- Author");
-        setCardBtn(card, "Button title", "https://adaptivecards.io");
+        setCardSummary(card, "Resumen");
+        setCardAuthor(card, "- Autor");
+        setCardBtn(card, "URL del Mensaje", "https://adaptivecards.io");
     }
 
     private getTeamList = async () => {
