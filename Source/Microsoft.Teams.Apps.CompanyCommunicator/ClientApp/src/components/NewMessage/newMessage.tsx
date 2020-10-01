@@ -285,7 +285,7 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
 
                         <div className="footerContainer">
                             <div className="buttonContainer">
-                                <Button content="Next" disabled={this.isNextBtnDisabled()} id="saveBtn" onClick={this.onNext} primary />
+                                <Button content="Siguiente" disabled={this.isNextBtnDisabled()} id="saveBtn" onClick={this.onNext} primary />
                             </div>
                         </div>
                     </div>
@@ -296,7 +296,7 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                     <div className="taskModule">
                         <div className="formContainer">
                             <div className="formContentContainer" >
-                                <h3>Elige cómo quieres enviar tu mensaje</h3>
+                                <h3>Elige como quieres enviar tu mensaje</h3>
                                 <RadiobuttonGroup
                                     className="radioBtns"
                                     value={this.state.selectedRadioBtn}
@@ -313,7 +313,7 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                         onSelectedChange={this.onTeamsChange}
                                         noResultsMessage="We couldn't find any matches."
                                     />
-                                    <Radiobutton name="grouped" value="rosters" label="Envíe el mensaje a personas específicas" />
+                                    <Radiobutton name="grouped" value="rosters" label="Envie el mensaje a personas especificas" />
                                     <Dropdown
                                         hidden={!this.state.rostersOptionSelected}
                                         placeholder="Choose team(s) members"
@@ -324,10 +324,10 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
                                         onSelectedChange={this.onRostersChange}
                                         noResultsMessage="We couldn't find any matches."
                                     />
-                                    <Radiobutton name="grouped" value="allUsers" label="Envíe el mensaje a toda la organizacion" />
+                                    <Radiobutton name="grouped" value="allUsers" label="Envie el mensaje a toda la organizacion" />
                                     <div className={this.state.selectedRadioBtn === "allUsers" ? "" : "hide"}>
                                         <div className="noteText">
-                                            <Text error content="Nota: esta opción envía el mensaje a todas las personas de su organización que tienen acceso a la aplicación." />
+                                            <Text error content="Nota: esta opcion envoa el mensaje a todas las personas de su organizacion que tienen acceso a la aplicacion." />
                                         </div>
                                     </div>
                                 </RadiobuttonGroup>
@@ -338,8 +338,8 @@ export default class NewMessage extends React.Component<INewMessageProps, formSt
 
                         <div className="footerContainer">
                             <div className="buttonContainer">
-                                <Button content="Back" onClick={this.onBack} secondary />
-                                <Button content="Save as draft" disabled={this.isSaveBtnDisabled()} id="saveBtn" onClick={this.onSave} primary />
+                                <Button content="Regresar" onClick={this.onBack} secondary />
+                                <Button content="Guardar en Borrador" disabled={this.isSaveBtnDisabled()} id="saveBtn" onClick={this.onSave} primary />
                             </div>
                         </div>
                     </div>
